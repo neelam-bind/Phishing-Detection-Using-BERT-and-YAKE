@@ -14,26 +14,30 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      # Step 2: Set up Python (Make sure to use the correct Python version)
+      # Step 2: Set up Python
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: '3.12'  # Update to the desired Python version
 
-      # Step 3: Install dependencies from requirements.txt
-      - name: Install dependencies
+      # Step 3: Upgrade pip to ensure compatibility with wheels
+      - name: Upgrade pip
         run: |
           python -m pip install --upgrade pip
+
+      # Step 4: Install dependencies from requirements.txt
+      - name: Install dependencies
+        run: |
           pip install setuptools  # Install setuptools explicitly (includes distutils)
           pip install -r requirements.txt  # Install all dependencies from requirements.txt
 
-      # Step 4: Set up Rust (needed for tokenizers package)
+      # Step 5: Set up Rust for building tokenizers package (if needed)
       - name: Set up Rust
         uses: actions/setup-rust@v1
         with:
-          rust-version: 'stable'  # This installs the stable version of Rust
+          rust-version: 'stable'  # Installs the latest stable version of Rust
 
-      # Step 5: Run deployment script
+      # Step 6: Run deployment script
       - name: Run deployment script
         run: |
           python deploy_script.py  # Adjust to your specific deployment logic
