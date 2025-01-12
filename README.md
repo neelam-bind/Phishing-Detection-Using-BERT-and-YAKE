@@ -71,3 +71,8 @@ By combining the strengths of **BERT** and **YAKE**, this project demonstrates h
 ---
 
 ## 🗂️ **Project Structure**
+📂 phishing-detection-nlp ├── 📄 README.md ├── 📂 datasets ├── 📂 models ├── 📂 notebooks └── 📂 scripts
+
+yaml
+Copy code
+
