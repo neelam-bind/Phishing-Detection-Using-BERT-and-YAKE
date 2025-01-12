@@ -1,8 +1,8 @@
-streamlit==1.16.0  # Latest stable version
-transformers==4.30.0  # Latest stable version
-torch>=2.1.0  # Latest version (make sure it's compatible)
-scikit-learn==1.2.2  # Latest stable version
-pandas==1.5.3  # Latest available stable version
-yake==0.4.7  # No need for update unless needed
-matplotlib==3.7.0  # Latest stable version
-seaborn==0.12.2  # Latest stable version
+streamlit==1.16.0
+transformers==4.30.0
+torch>=2.1.0
+scikit-learn==1.2.2
+pandas==1.5.3
+yake==0.4.7
+matplotlib==3.7.0
+seaborn==0.12.2
