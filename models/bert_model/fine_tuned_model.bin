@@ -1,1 +1,5 @@
+from transformers import BertForSequenceClassification, BertTokenizer
+
+# Load pre-trained BERT model
+model = BertForSequenceClassification.from_pretrained('bert-base-uncased')
 
