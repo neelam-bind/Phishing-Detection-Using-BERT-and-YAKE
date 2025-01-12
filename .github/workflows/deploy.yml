@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: windows-latest  # Change to Windows runner
+    runs-on: windows-latest  # Windows runner
 
     steps:
       # Step 1: Checkout the code
@@ -24,10 +24,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install setuptools  # Install setuptools explicitly (includes distutils)
           pip install -r requirements.txt  # Install all dependencies from requirements.txt
 
       # Step 4: Run deployment script
       - name: Run deployment script
         run: |
-          # Insert your deployment commands here
           python deploy_script.py  # Adjust to your specific deployment logic
