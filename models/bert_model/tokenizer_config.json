@@ -1,1 +1,6 @@
+{
+  "do_lower_case": true,
+  "max_len": 512,
+  "strip_accents": false
+}
 
