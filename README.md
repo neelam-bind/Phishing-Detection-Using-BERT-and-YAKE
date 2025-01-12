@@ -70,11 +70,11 @@ Combining **BERT’s deep contextual understanding** and **YAKE’s lightweight 
 
 ## 📂 **Project Structure**  
 
-📂 phishing-detection-nlp
-├── 📄 README.md # Project documentation
-├── 📂 data # Datasets for training and testing
-├── 📂 models # Pre-trained and fine-tuned models
-├── 📂 notebooks # Jupyter notebooks for experiments
-├── 📂 scripts # Python scripts for preprocessing and evaluation
-└── 📂 results # Outputs, reports, and visualizations
+phishing-detection-nlp
+├── README.md            # Project documentation
+├── data                 # Datasets for training and testing
+├── models               # Pre-trained and fine-tuned models
+├── notebooks            # Jupyter notebooks for experiments
+├── scripts              # Python scripts for preprocessing and evaluation
+└── results              # Outputs, reports, and visualizations
 
