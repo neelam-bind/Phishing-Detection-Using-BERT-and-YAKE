@@ -27,7 +27,13 @@ jobs:
           pip install setuptools  # Install setuptools explicitly (includes distutils)
           pip install -r requirements.txt  # Install all dependencies from requirements.txt
 
-      # Step 4: Run deployment script
+      # Step 4: Set up Rust (needed for tokenizers package)
+      - name: Set up Rust
+        uses: actions/setup-rust@v1
+        with:
+          rust-version: 'stable'  # This installs the stable version of Rust
+
+      # Step 5: Run deployment script
       - name: Run deployment script
         run: |
           python deploy_script.py  # Adjust to your specific deployment logic
