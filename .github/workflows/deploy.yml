@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest  # Change to Windows runner
 
     steps:
       # Step 1: Checkout the code
@@ -18,23 +18,15 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.12'  # Update to the desired Python version (3.12 in this case)
+          python-version: '3.12'  # Update to the desired Python version
 
-      # Step 3: Enable the universe repository (to install python3-distutils)
-      - name: Enable universe repository
-        run: |
-          sudo add-apt-repository universe
-          sudo apt-get update
-
-      # Step 4: Install necessary dependencies including python3-distutils
+      # Step 3: Install dependencies from requirements.txt
       - name: Install dependencies
         run: |
-          sudo apt-get install -y python3-distutils
-          sudo apt-get install -y build-essential  # Install build-essential for any C dependencies
           python -m pip install --upgrade pip
           pip install -r requirements.txt  # Install all dependencies from requirements.txt
 
-      # Step 5: Run deployment script
+      # Step 4: Run deployment script
       - name: Run deployment script
         run: |
           # Insert your deployment commands here
