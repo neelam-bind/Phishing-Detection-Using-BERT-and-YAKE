@@ -119,7 +119,7 @@ email_dataset['Email Type'] = email_dataset['Email Type'].map(label_to_int)
 # Splitting dataset into train and test
 train_emails, test_emails, train_labels, test_labels = train_test_split(
     email_dataset['Email Text'], email_dataset['Email Type'], test_size=0.2, random_state=42)
-
+```
 
 ## Results
 
@@ -140,5 +140,9 @@ This project demonstrates the powerful synergy between **BERT** and **YAKE** for
 - Chakkarwar, et al. (2023) - Transformer-based models in NLP.
 - Salloum, et al. (2021) - Keyword extraction for phishing emails.
 - Koroteev (2021) - Handling dataset imbalance in NLP models.
+
+## View the Project
+
+You can view the full project implementation on [Google Colab](https://colab.research.google.com/drive/1TTkSrigsT6PT5f6DdJMUvtntyq9onvjx?usp=sharing).
 
 
