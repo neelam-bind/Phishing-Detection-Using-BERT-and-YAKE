@@ -141,8 +141,5 @@ This project demonstrates the powerful synergy between **BERT** and **YAKE** for
 - Salloum, et al. (2021) - Keyword extraction for phishing emails.
 - Koroteev (2021) - Handling dataset imbalance in NLP models.
 
-## View the Project
-
-You can view the full project implementation on [Google Colab](https://colab.research.google.com/drive/1TTkSrigsT6PT5f6DdJMUvtntyq9onvjx?usp=sharing).
 
 
